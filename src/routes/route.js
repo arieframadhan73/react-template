@@ -1,7 +1,8 @@
 import PrivateScreen from '../components/PrivateScreen';
 import PublicScreen from '../components/PublicScreen';
-import Home from '../components/Home';
+import Home from '../containers/Home';
 import NotFound from '../components/NotFound';
+import SignIn from '../containers/Login'
 
 export const privateRoute = {
   private: {
@@ -21,6 +22,11 @@ export const publicRoute = {
     title: 'Home',
     url: '/',
     component: Home
+  },
+  signIn: {
+    title: 'Sign In',
+    url: '/sign-in',
+    component: SignIn
   }
 };
 

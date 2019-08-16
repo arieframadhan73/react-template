@@ -31,7 +31,7 @@ const HomeScreen = () => {
   const dispatch = useDispatch();
 
   const handleLogin = useCallback(
-    (token = 'access_token') => dispatch(handleLoginAction(token)),
+    (token = 'user_private') => dispatch(handleLoginAction(token)),
     [dispatch]
   );
 
